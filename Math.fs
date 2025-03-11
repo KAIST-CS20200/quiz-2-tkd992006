@@ -10,5 +10,5 @@ let collatz n =
   let rec helper n count =
     if n = 1 then count
     elif isEven n then helper (n / 2) (count + 1)
-    else helper ((3 * n + 1))/2 (count + 2)
+    else helper ((3 * n + 1)/2) (count + 2)
   helper n 0
